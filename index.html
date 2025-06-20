@@ -107,10 +107,10 @@
             // Obtém os valores dos campos do formulário
 
             const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
+            const texto = `Olá! Meu nome é ${nome}, ${mensagem}`;
             const telefone = '5517997172045'; // Substitua pelo seu número de telefone
 
-            const texto = `Olá! Meu nome é ${nome}, ${mensagem.value}`
+            const texto = `Olá! Meu nome é ${nome}, ${mensagem.value}`;
             const msgFormatada = encodeURIComponent(texto)
 
             const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`
